@@ -51,6 +51,10 @@
   flex-flow: row nowrap;
   margin: 0 auto;
 }
+.border-shadow {
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  border-bottom: 1px solid #d2d2d2;
+}
 .btn-properties {
   width: 120px;
   height: 40px;
@@ -72,6 +76,7 @@
   justify-content: center;
   align-items: center;
   color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -201,12 +206,171 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.btn-primary {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  background-color: #0091CF;
+}
+.btn-danger {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  background-color: #FD4445;
+}
+.btn-default {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  background-color: #E5E5E5;
+  color: #817C7C;
+}
+.btn-default:hover {
+  background-color: #817C7C;
+  color: #ffffff;
+}
+.btn-warning {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  background-color: #FFAF00;
+}
+.btn-clear {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  background-color: #ffffff;
+  border: 1px solid rgba(229, 229, 229, 0.22);
+  color: #0091CF;
+}
+.btn-outline {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  border: 1px solid #0091CF;
+  color: #0091CF;
+}
+.btn-outline:hover {
+  background-color: #0091CF;
+  color: #ffffff;
+}
+.flex-centered-spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  justify-content: space-between;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  border-bottom: 1px solid #d2d2d2;
+}
+.container header .brand h1 {
+  color: #01395E;
+}
+.container header nav a {
+  padding: 18.75px;
+}
+.container .jumbotron {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.container .jumbotron .jumbotron-wrapper {
+  border-bottom: 1px dotted #01395E;
+  padding: 48px;
+}
+.container .jumbotron .jumbotron-wrapper h1 {
+  color: #01395E;
+}
+.container .jumbotron .jumbotron-wrapper p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  width: 75%;
+  margin: 25px 0px;
+  color: #01395E;
+  line-height: 1.5;
+}
+.container .jumbotron .jumbotron-wrapper .btn {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  background-color: #0091CF;
+}
 /* Small responsive prototyping css framework
    v1.0
    License: none (public domain)
 */
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 a {
   font-family: 'Raleway', sans-serif;
@@ -226,51 +390,37 @@ h1 {
   font-family: 'Raleway', sans-serif;
   color: #01395E;
   font-weight: 300;
-  font-size: 3.6rem;
+  font-size: 2.6rem;
 }
 h2 {
   font-family: 'Raleway', sans-serif;
   color: #01395E;
   font-weight: 300;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
   color: #01395E;
   font-weight: 300;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 h4 {
   font-family: 'Raleway', sans-serif;
   color: #01395E;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 h5 {
   font-family: 'Raleway', sans-serif;
   color: #01395E;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 h6 {
   font-family: 'Raleway', sans-serif;
   color: #01395E;
   font-weight: 300;
   font-size: 1.2rem;
-}
-.btn-primary {
-  width: 120px;
-  height: 40px;
-  margin-top: 10px;
-  border-radius: 6px;
-  text-transform: capitalize;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #0091CF;
 }
 .col-1 {
   display: flex;
@@ -351,57 +501,4 @@ h6 {
   display: flex;
   padding: 10px 0.5%;
   width: 100%;
-}
-.flex-centered-spacebetween {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.container header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 1%;
-  justify-content: space-between;
-  border-bottom: 1px dotted #01395E;
-}
-.container header .brand h1 {
-  color: #01395E;
-}
-.container header nav a {
-  padding: 15px;
-}
-.container .jumbotron {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-}
-.container .jumbotron .jumbotron-wrapper {
-  border-bottom: 1px dotted #01395E;
-  padding: 48px;
-}
-.container .jumbotron .jumbotron-wrapper h1 {
-  color: #01395E;
-}
-.container .jumbotron .jumbotron-wrapper p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  width: 60%;
-  margin: 25px 0px;
-  color: #01395E;
-}
-.container .jumbotron .jumbotron-wrapper .btn {
-  width: 120px;
-  height: 40px;
-  margin-top: 10px;
-  border-radius: 6px;
-  text-transform: capitalize;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #0091CF;
 }

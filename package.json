@@ -1,0 +1,9 @@
+{
+  "name": "smrd",
+  "version": "1.0.1",
+  "description": "a small responsive framework for rapid prototyping",
+  "main": "index.js",
+  "author": "Obed Lorisson <Obed.lorisson@gmail.com>",
+  "license": "MIT",
+  "private": false
+}

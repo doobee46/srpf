@@ -18,6 +18,12 @@
     margin: 0 auto;
     //border:1px solid grey;
 }
+
+.border-shadow{
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  border-bottom: 1px solid #d2d2d2;
+}
+
   
   .col(@value){
     display:flex;
@@ -40,7 +46,8 @@
   .btn{
      .btn-properties();
      .flex-centered();
-     color: white;
+      color: white;
+      box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
   }
 
   .col-border(@bd-color) {
@@ -48,5 +55,4 @@
   }
 
   @border-bottom:1px dotted @secondary;
-  
   
