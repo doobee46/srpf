@@ -1,0 +1,101 @@
+/* Small responsive prototyping css framework
+   v1.0
+   License: none (public domain)
+*/
+
+
+// Global styles
+.col-border(@bd-color) {
+  border-right: 1px solid @bd-color;
+}
+
+html{
+  font-size:62.5%;
+}
+
+h1{
+  .font-properties();
+  font-size:4.6rem;
+}
+
+h2{
+  .font-properties();
+  font-size:3.6rem;
+}
+
+h3{
+  .font-properties();
+  font-size:2.8rem;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-flow:row nowrap;
+  margin: 0 auto;
+  border:1px solid grey;
+}
+
+.col(@value){
+  display:flex;
+  padding:10px 0.5%;
+  //.col-border(black);
+  //background-color: grey;
+  width:@width * @value;
+}
+
+.col-1{
+  .col(1);
+}
+
+.col-2{
+  .col(2);
+}
+
+.col-3{ 
+  .col(3);
+}
+.col-4{
+  .col(4);
+}
+.col-5{
+  .col(5);
+}
+.col-6{
+  .col(6);
+}
+.col-7{
+  .col(7);
+}
+.col-8{
+  .col(8);
+}
+.col-9{
+  .col(9);
+}
+.col-10{
+  .col(10);
+}
+.col-11{
+  .col(11);
+}
+.col-12{
+  .col(12);
+}
+.col-13{
+  .col(13);
+}
+.col-14{
+  .col(14);
+}
+.col-15{
+  .col(15);
+}
+.col-16{
+  .col(16);
+}
+
+.jumbotron{
+
+}

@@ -1,0 +1,278 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Raleway Thin Italic'), local('Raleway-ThinItalic'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptqg8zYS_SKggPNyCgwLrFoJfA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptsg8zYS_SKggPNwE44TYFv.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwIYqWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Raleway Medium'), local('Raleway-Medium'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwN4rWqZPBQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptrg8zYS_SKggPNwJYtWqZPBQ.ttf) format('truetype');
+}
+.font-properties {
+  font-family: 'Raleway', sans-serif;
+  color: #817C7C;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Small responsive prototyping css framework
+   v1.0
+   License: none (public domain)
+*/
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #817C7C;
+  font-size: 4.6rem;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #817C7C;
+  font-size: 3.6rem;
+}
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #817C7C;
+  font-size: 2.8rem;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+  border: 1px solid grey;
+}
+.col-1 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 6.25%;
+}
+.col-2 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 12.5%;
+}
+.col-3 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 18.75%;
+}
+.col-4 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 25%;
+}
+.col-5 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 31.25%;
+}
+.col-6 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 37.5%;
+}
+.col-7 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 43.75%;
+}
+.col-8 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 50%;
+}
+.col-9 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 56.25%;
+}
+.col-10 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 62.5%;
+}
+.col-11 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 68.75%;
+}
+.col-12 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 75%;
+}
+.col-13 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 81.25%;
+}
+.col-14 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 87.5%;
+}
+.col-15 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 93.75%;
+}
+.col-16 {
+  display: flex;
+  padding: 10px 0.5%;
+  width: 100%;
+}
