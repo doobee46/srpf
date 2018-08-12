@@ -2,4 +2,51 @@
 .font-properties{
     font-family: 'Raleway', sans-serif;
     color:@font-color;
+    font-weight: 300;
 }
+
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    flex-flow:row nowrap;
+    margin: 0 auto;
+    //border:1px solid grey;
+}
+  
+  .col(@value){
+    display:flex;
+    padding:10px 0.5%;
+    //.col-border(black);
+    //background-color: grey;
+    width:@width * @value;
+  }
+  .btn-properties{
+    width: 120px;;
+    height: 40px;
+    margin-top:10px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-size:1.4rem;
+
+  }
+  
+  .btn{
+     .btn-properties();
+     .flex-centered();
+     color: white;
+  }
+
+  .col-border(@bd-color) {
+    border-right: 1px solid @bd-color;
+  }
+
+  @border-bottom:1px dotted @secondary;
+  
+  
