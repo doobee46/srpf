@@ -53,7 +53,7 @@
 }
 .border-shadow {
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
-  border-bottom: 1px solid #d2d2d2;
+  border-bottom: 1px solid #E5E5E5;
 }
 .btn-properties {
   width: 120px;
@@ -63,6 +63,7 @@
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
 }
 .btn {
   width: 120px;
@@ -72,6 +73,7 @@
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,12 +216,16 @@ table {
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
   background-color: #0091CF;
+}
+.btn-primary:hover {
+  background-color: #1D6D8E;
 }
 .btn-danger {
   width: 120px;
@@ -229,12 +235,16 @@ table {
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
   background-color: #FD4445;
+}
+.btn-danger:hover {
+  background-color: #A41F20;
 }
 .btn-default {
   width: 120px;
@@ -244,6 +254,7 @@ table {
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,6 +267,27 @@ table {
   background-color: #817C7C;
   color: #ffffff;
 }
+.btn-secondary {
+  width: 120px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  transition: background-color 2s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+  background-color: #01395E;
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  background-color: #011F34;
+  color: #ffffff;
+}
 .btn-warning {
   width: 120px;
   height: 40px;
@@ -264,12 +296,17 @@ table {
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
   background-color: #FFAF00;
+}
+.btn-warning:hover {
+  background-color: #E9A81B;
+  color: #ffffff;
 }
 .btn-clear {
   width: 120px;
@@ -279,6 +316,7 @@ table {
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,6 +334,7 @@ table {
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,16 +356,19 @@ table {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1%;
+  padding: 20px 2.083%;
   justify-content: space-between;
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
-  border-bottom: 1px solid #d2d2d2;
+  border-bottom: 1px solid #E5E5E5;
 }
 .container header .brand h1 {
   color: #01395E;
 }
 .container header nav a {
   padding: 18.75px;
+}
+.container header nav a:hover {
+  text-decoration: underline;
 }
 .container .jumbotron {
   display: flex;
@@ -335,10 +377,11 @@ table {
   height: auto;
 }
 .container .jumbotron .jumbotron-wrapper {
-  border-bottom: 1px dotted #01395E;
-  padding: 48px;
+  padding: 80px 2.03%;
 }
 .container .jumbotron .jumbotron-wrapper h1 {
+  font-size: 4.6rem;
+  font-weight: 700;
   color: #01395E;
 }
 .container .jumbotron .jumbotron-wrapper p {
@@ -348,6 +391,19 @@ table {
   margin: 25px 0px;
   color: #01395E;
   line-height: 1.5;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700px;
+}
+.container .jumbotron .jumbotron-wrapper .jumbo-divider {
+  display: flex;
+  width: 75%;
+  height: 1px;
+  background-color: #E5E5E5;
+}
+.container .jumbotron .jumbotron-wrapper p.sub-title {
+  font-size: 1.8rem;
+  font-family: 'Raleway', sans-serif;
 }
 .container .jumbotron .jumbotron-wrapper .btn {
   width: 120px;
@@ -357,12 +413,53 @@ table {
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
+  transition: background-color 2s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
   background-color: #0091CF;
+}
+.container .jumbotron .jumbotron-wrapper .btn:hover {
+  background-color: #1D6D8E;
+}
+.container .divider {
+  display: flex;
+  width: 95.5%;
+  height: 2px;
+  margin: 25px auto;
+  background-color: #E5E5E5;
+}
+.container .col-5 .wrapper {
+  margin: 50px 0px;
+}
+.container .col-5 .wrapper h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+.container .col-5 .wrapper img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 25px;
+}
+.container .col-5 .wrapper p {
+  margin-bottom: 35px;
+}
+.container .col-10 {
+  justify-content: center;
+  height: 500px;
+}
+.container .col-10 .feature-wrapper {
+  height: auto;
+  margin: 50px 0px;
+}
+.container .col-10 .feature-wrapper h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 /* Small responsive prototyping css framework
    v1.0
@@ -377,7 +474,7 @@ a {
   color: #01395E;
   font-weight: 300;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 p {
   font-family: 'Raleway', sans-serif;
@@ -424,81 +521,113 @@ h6 {
 }
 .col-1 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 6.25%;
+  padding: 10px 2.083%;
 }
 .col-2 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 12.5%;
+  padding: 10px 2.083%;
 }
 .col-3 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 18.75%;
+  padding: 10px 2.083%;
 }
 .col-4 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 25%;
+  padding: 10px 2.083%;
 }
 .col-5 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 31.25%;
+  padding: 10px 2.083%;
 }
 .col-6 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 37.5%;
+  padding: 10px 2.083%;
 }
 .col-7 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 43.75%;
+  padding: 10px 2.083%;
 }
 .col-8 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 50%;
+  padding: 10px 2.083%;
 }
 .col-9 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 56.25%;
+  padding: 10px 2.083%;
 }
 .col-10 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 62.5%;
+  padding: 10px 2.083%;
 }
 .col-11 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 68.75%;
+  padding: 10px 2.083%;
 }
 .col-12 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 75%;
+  padding: 10px 2.083%;
 }
 .col-13 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 81.25%;
+  padding: 10px 2.083%;
 }
 .col-14 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 87.5%;
+  padding: 10px 2.083%;
 }
 .col-15 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 93.75%;
+  padding: 10px 2.083%;
 }
 .col-16 {
   display: flex;
+  flex-direction: column;
   padding: 10px 0.5%;
   width: 100%;
+  padding: 10px 2.083%;
 }
