@@ -95,7 +95,7 @@
   max-width: 1440px;
   height: 48px;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   align-items: center;
   background-color: #F1F1F1;
 }
@@ -491,7 +491,7 @@ table {
   max-width: 1440px;
   height: 48px;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   align-items: center;
   background-color: #F1F1F1;
   border-bottom: 0px;
@@ -556,7 +556,7 @@ table {
   max-width: 1440px;
   height: 48px;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   align-items: center;
   background-color: #F1F1F1;
   justify-content: flex-start;
@@ -569,6 +569,7 @@ table {
   letter-spacing: 2px;
   color: #4F4F4F;
   text-transform: capitalize;
+  width: 100%;
 }
 .panels .panel-header span.ico-right {
   margin: 0px 8px 0px 20px;
@@ -578,7 +579,7 @@ table {
 .panels .panel-header .icon {
   display: flex;
   justify-content: flex-end;
-  width: 90%;
+  width: 100%;
 }
 .panels .panel-header .icon span.ico-left {
   margin: 0px 20px 0px 8px;

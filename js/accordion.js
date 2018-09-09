@@ -6,9 +6,21 @@ class PanelContainer{
     this.panelBody = new PanelBody(this.panelItem);
     this.button.addEventListener('click', () => {this.expand()});
   }
-  expand(){
-    this.panelBody.panelToggle();
+
+  toggleIcon(){
+    if(this.button.classList.contains('fa-plus')){
+      this.button.classList.remove('fa-plus');
+      this.button.classList.add('fa-minus');
+    }else if(this.button.classList.contains('fa-minus')){
+      this.button.classList.remove('fa-minus');
+      this.button.classList.add('fa-plus');
+    }
   }
+
+  expand() {
+    this.toggleIcon();
+    this.panelBody.panelToggle();
+  }  
 }
 
 class PanelBody{
@@ -17,7 +29,7 @@ class PanelBody{
   }
 
   panelToggle(){
-   this.panel.classList.toggle('panel-open');
+    this.panel.classList.toggle('panel-open');
   }
 }
 
