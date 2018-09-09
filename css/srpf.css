@@ -73,6 +73,32 @@
   color: white;
   box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
 }
+.h3-components {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #4F4F4F;
+  text-transform: capitalize;
+}
+.ico-right {
+  margin: 0px 8px 0px 20px;
+  font-size: 1.2rem;
+  color: #817C7C;
+}
+.ico-left {
+  margin: 0px 20px 0px 8px;
+  font-size: 1.2rem;
+  color: #817C7C;
+}
+.component-header {
+  width: 100%;
+  max-width: 1440px;
+  height: 48px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: #F1F1F1;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -454,18 +480,18 @@ table {
   background-color: #0091CF;
   color: #ffffff;
 }
-.container .col-16 .tabs {
+.tabs {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 1440px;
 }
-.container .col-16 .tabs .tabs-links {
+.tabs .tabs-links {
   width: 100%;
   max-width: 1440px;
   height: 48px;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   background-color: #F1F1F1;
   border-bottom: 0px;
@@ -474,31 +500,32 @@ table {
   border-right: 1px solid #E5E5E5;
   cursor: pointer;
 }
-.container .col-16 .tabs .tabs-links .tabs-link {
+.tabs .tabs-links .tabs-link {
   display: flex;
   justify-content: center;
-  padding: 17px 25px;
+  padding: 16px 25px;
   width: 100%;
   max-width: 60px;
 }
-.container .col-16 .tabs .tabs-links .tabs-link:hover {
+.tabs .tabs-links .tabs-link:hover {
   background-color: #ccc;
 }
-.container .col-16 .tabs .tabs-links .tabs-link h3 {
+.tabs .tabs-links .tabs-link h3 {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
   color: #4F4F4F;
+  text-transform: capitalize;
 }
-.container .col-16 .tabs .tabs-links .tabs-link-selected {
+.tabs .tabs-links .tabs-link-selected {
   background-color: #ffffff;
   border-top: 1px solid #E5E5E5;
   color: #817C7C;
 }
-.container .col-16 .tabs .tabs-links .tabs-link-selected:hover {
+.tabs .tabs-links .tabs-link-selected:hover {
   background-color: #ffffff;
 }
-.container .col-16 .tabs .tabs-items {
+.tabs .tabs-items {
   width: 100%;
   height: auto;
   border-top: 0px;
@@ -507,15 +534,73 @@ table {
   border-right: 1px solid #E5E5E5;
   display: flex;
 }
-.container .col-16 .tabs .tabs-items .tabs-item {
+.tabs .tabs-items .tabs-item {
   width: 95%;
   padding: 2.083%;
   display: none;
 }
-.container .col-16 .tabs .tabs-items .tabs-item .tabs-item-title {
+.tabs .tabs-items .tabs-item .tabs-item-title {
   margin-bottom: 20px;
 }
-.container .col-16 .tabs .tabs-items .tabs-item-selected {
+.tabs .tabs-items .tabs-item-selected {
+  display: block;
+}
+.panels {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+.panels .panel-header {
+  width: 100%;
+  max-width: 1440px;
+  height: 48px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: #F1F1F1;
+  justify-content: flex-start;
+  border: 1px solid #E5E5E5;
+  margin-bottom: 1px;
+}
+.panels .panel-header h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #4F4F4F;
+  text-transform: capitalize;
+}
+.panels .panel-header span.ico-right {
+  margin: 0px 8px 0px 20px;
+  font-size: 1.2rem;
+  color: #817C7C;
+}
+.panels .panel-header .icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+}
+.panels .panel-header .icon span.ico-left {
+  margin: 0px 20px 0px 8px;
+  font-size: 1.2rem;
+  color: #817C7C;
+  cursor: pointer;
+}
+.panels .panel-body {
+  width: 100%;
+  height: auto;
+  border: 1px solid #E5E5E5;
+  display: none;
+}
+.panels .panel-body .panel-item-title {
+  margin-bottom: 8px;
+  padding: 17px 25px;
+}
+.panels .panel-body .panel-item-description {
+  padding: 0px 25px 17px;
+  width: 90%;
+}
+.panels .panel-open {
   display: block;
 }
 /* Small responsive prototyping css framework

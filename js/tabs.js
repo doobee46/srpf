@@ -6,6 +6,7 @@ class TabLink{
     this.tabItem = new TabItem(this.itemElement);
     this.element.addEventListener('click', () => {this.selectTab()});
   }
+  
   selectTab () {
     const links = document.querySelectorAll('.tabs-link');
     Array.from(links).map(link => {

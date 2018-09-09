@@ -1,0 +1,48 @@
+.panels{
+  width: 100%;
+  max-width: 1440px;
+  display:flex;
+  flex-direction: column;
+  .panel-header{
+    .component-header();
+    justify-content: flex-start;
+    border:1px solid @tabBorderColor;
+    margin-bottom:1px;
+    h3{
+      .h3-components();
+    }
+    span.ico-right{
+      .ico-right();
+    }
+    .icon{
+      display: flex;
+      justify-content: flex-end;
+      width: 90%;
+      span.ico-left{
+        .ico-left();
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .panel-body{
+    width:100%;
+    height: auto;
+    border:1px solid @tabBorderColor;
+    //flex-direction: column;
+    display: none;
+    .panel-item-title{ 
+      margin-bottom:8px;
+      padding:17px 25px;
+    }
+    .panel-item-description{
+      padding: 0px 25px 17px;
+      width:90%;
+    } 
+
+  }
+  .panel-open{
+    display: block;
+  }
+}
+
